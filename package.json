@@ -1,0 +1,20 @@
+{
+  "name": "electron-prompt",
+  "version": "0.1.0",
+  "description": "Electron helper to prompt for a string value",
+  "main": "lib/index.js",
+  "keywords": ["electron", "prompt", "string"],
+  "author": {
+      "name": "p-sam",
+      "email": "p-sam@users.noreply.github.com",
+      "url": "https://github.com/p-sam"
+  },
+  "repository": {
+    "type": "git", 
+    "url": "https://github.com/p-sam/electron-prompt.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "doc-ready": "^1.0.4"
+  }
+}
