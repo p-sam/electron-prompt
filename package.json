@@ -1,0 +1,20 @@
+{
+  "name": "electron-prompt",
+  "version": "0.1.0",
+  "description": "Electron helper to prompt for a string value",
+  "main": "lib/index.js",
+  "keywords": ["electron", "prompt", "string"],
+  "author": {
+      "name": "sperrichon",
+      "email": "sperrichon@users.noreply.github.com",
+      "url": "https://github.com/sperrichon"
+  },
+  "repository": {
+    "type": "git", 
+    "url": "https://github.com/sperrichon/electron-prompt.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "doc-ready": "^1.0.4"
+  }
+}
