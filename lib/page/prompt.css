@@ -6,6 +6,17 @@ body {
     overflow: hidden;
 }
 
+#container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+#form {
+    width: 100%;
+}
+
 #label {
     max-width: 100%;
     margin-bottom: .8em;
