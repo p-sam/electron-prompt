@@ -24,7 +24,7 @@ prompt({
     value: 'http://example.org'
 })
 .then((r) => {
-    console.log('result', r);
+    console.log('result', r); //null if window was closed, or user clicked Cancel
 })
 .catch(console.error);
 ```
