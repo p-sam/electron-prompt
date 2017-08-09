@@ -1,6 +1,6 @@
 {
   "name": "electron-prompt",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Electron helper to prompt for a string value",
   "main": "lib/index.js",
   "keywords": ["electron", "prompt", "string"],
