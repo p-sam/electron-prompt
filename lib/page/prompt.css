@@ -36,6 +36,10 @@ body {
     margin: 0 0 1.2em;
 }
 
+select#data {
+    height: 2em;
+}
+
 #data-container {
     text-align: center;
 }
