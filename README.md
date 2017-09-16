@@ -1,6 +1,6 @@
 # electron-prompt
 
-Electron helper to prompt for a string value or dropdown select
+Electron helper to prompt for a value via input or select
 
 ## Usage
 
@@ -21,18 +21,18 @@ prompt({
     title: 'Prompt example',
     label: 'URL:',
     value: 'http://example.org',
-    inputAttrs: {
+    inputAttrs: { // attrs to be set if using 'input'
         type: 'url'
     },
-    type: 'select',//optional defaults to input,
-    selectOptions: {// only needed if you are using select
-        'value 1':'Display Option 1',
-        'value 2':'Display Option 2',
-        'value 3':'Display Option 3'
+    type: 'select', // 'select' or 'input, defaults to 'input'
+    selectOptions: { // select options if using 'select' type
+        'value 1': 'Display Option 1',
+        'value 2': 'Display Option 2',
+        'value 3': 'Display Option 3'
     }
 })
 .then((r) => {
-    console.log('result', r); //null if window was closed, or user clicked Cancel
+    console.log('result', r); // null if window was closed, or user clicked Cancel
 })
 .catch(console.error);
 ```
