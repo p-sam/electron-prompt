@@ -3,14 +3,15 @@ body {
     line-height: 1.5em;
     color: #333;
     background-color: #fff;
-    overflow: hidden;
 }
 
 #container {
     align-items: center;
     justify-content: center;
-    display: flex;
+    /* display: flex; */
     height: 100%;
+    overflow: auto;
+
 }
 
 #form {
@@ -19,11 +20,12 @@ body {
 
 #label {
     max-width: 100%;
+    max-height: 100%;
     margin-bottom: .8em;
     padding: 0 .5em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
 }
 
 #data {
