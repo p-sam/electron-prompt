@@ -25,8 +25,7 @@ prompt({
     value: 'http://example.org',
     inputAttrs: {
         type: 'url'
-    },
-    type: 'select'
+    }
 })
 .then((r) => {
     if(r === null) {
