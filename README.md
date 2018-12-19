@@ -61,6 +61,7 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | selectOptions  | (optional, object) The items for the select dropdown if using te 'select' type in the format 'value': 'display text', where the value is what will be given to the then block and the display text is what the user will see. |
 | useHtmlLabel | (optional, boolean) Whether the label should be interpreted as HTML or not. Defaults to false. |
 | icon | (optional, string) The path to an icon image to use in the title bar. Defaults to null and uses electron's icon. |
+| customStylesheet  | (optional, string) The local path of a CSS file to stylize the prompt window. Defaults to null. |
 
 If not supplied, it uses the defaults listed in the table above.
 
