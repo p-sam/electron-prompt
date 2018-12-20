@@ -47,7 +47,7 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 
 ### Options object (optional)
 
-| Key  | Explaination |
+| Key  | Explanation |
 | ------------- | ------------- |
 | width  | (optional, integer) The width of the prompt window. Defaults to 370. |
 | height  | (optional, integer) The height of the prompt window. Defaults to 130. |
@@ -58,9 +58,12 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | type   | (optional, string) The type of input field, either 'input' for a standard text input field or 'select' for a dropdown type input. Defaults to 'input'.|
 | inputAttrs  | (optional, object) The attributes of the input field, analagous to the HTML attributes: `{type: 'text', required: true}` -> `<input type="text" required>`. Used if the type is 'input' |
 | selectOptions  | (optional, object) The items for the select dropdown if using te 'select' type in the format 'value': 'display text', where the value is what will be given to the then block and the display text is what the user will see. |
+| useHtmlLabel | (optional, boolean) Whether the label should be interpreted as HTML or not. Defaults to false. |
+| icon | (optional, string) The path to an icon image to use in the title bar. Defaults to null and uses electron's icon. |
+| customStylesheet  | (optional, string) The local path of a CSS file to stylize the prompt window. Defaults to null. |
 
 If not supplied, it uses the defaults listed in the table above.
 
-### parentBrowserWindow
+### parentBrowserWindow (optional)
 
-(optional) The window in which to display the prompt on. If not supplied, the parent window of the prompt will be null.
+The window in which to display the prompt on. If not supplied, the parent window of the prompt will be null.
