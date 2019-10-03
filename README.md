@@ -61,6 +61,7 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | useHtmlLabel | (optional, boolean) Whether the label should be interpreted as HTML or not. Defaults to false. |
 | icon | (optional, string) The path to an icon image to use in the title bar. Defaults to null and uses electron's icon. |
 | customStylesheet  | (optional, string) The local path of a CSS file to stylize the prompt window. Defaults to null. |
+| alwaysOnTop | (optional, boolean) Whether the prompt window stays on top of other windows or not. Defaults to false. |
 
 If not supplied, it uses the defaults listed in the table above.
 
