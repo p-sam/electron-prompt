@@ -8,7 +8,7 @@ body {
 #container {
     align-items: center;
     justify-content: center;
-    /* display: flex; */
+    display: flex;
     height: 100%;
     overflow: auto;
 
@@ -23,9 +23,9 @@ body {
     max-height: 100%;
     margin-bottom: .8em;
     padding: 0 .5em;
-    /* white-space: nowrap; */
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #data {
