@@ -64,7 +64,8 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | resizable  | (optional, boolean) Whether the prompt window can be resized or not (also sets useContentSize). Defaults to false. |
 | alwaysOnTop | (optional, boolean) Whether the window should always stay on top of other windows. Defaults to false |
 | icon | (optional, string) The path to an icon image to use in the title bar. Defaults to null and uses electron's icon. |
-| customStylesheet  | (optional, string) The local path of a CSS file to stylize the prompt window. Defaults to null. |
+| customStylesheet  | (optional, string) The local path of a CSS file to stylize the prompt window (will be included in <style> tag). Defaults to null. |
+| linkStylesheet  | (optional, string) The local path of a CSS file to stylize the prompt window (will be included as <link> tag). Defaults to null. |
 | menuBarVisible | (optional, boolean) Whether to show the menubar or not. Defaults to false. |
 
 If not supplied, it uses the defaults listed in the table above.
