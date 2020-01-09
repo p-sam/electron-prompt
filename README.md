@@ -52,12 +52,11 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | ------------- | ------------- |
 | title  | (optional, string) The title of the prompt window. Defaults to 'Prompt'. |
 | label  | (optional, string) The label which appears on the prompt for the input field. Defaults to 'Please input a value:'. |
-| okLabel  | (optional, string) The text of the OK button. Defaults to 'OK'. |
-| cancelLabel  | (optional, string) The text of the Cancel button. Defaults to 'Cancel'. |
+| buttonLabels | (optional, object) The text for the OK/cancel buttons. Properties are 'ok' and 'cancel' and override the defaults of 'OK' and 'Cancel'. |
 | value  | (optional, string) The default value for the input field. Defaults to null.|
 | type   | (optional, string) The type of input field, either 'input' for a standard text input field or 'select' for a dropdown type input. Defaults to 'input'.|
 | inputAttrs  | (optional, object) The attributes of the input field, analagous to the HTML attributes: `{type: 'text', required: true}` -> `<input type="text" required>`. Used if the type is 'input' |
-| selectOptions  | (optional, object) The items for the select dropdown if using te 'select' type in the format 'value': 'display text', where the value is what will be given to the then block and the display text is what the user will see. |
+| selectOptions  | (optional, object) The items for the select dropdown if using the 'select' type in the format 'value': 'display text', where the value is what will be given to the then block and the display text is what the user will see. |
 | useHtmlLabel | (optional, boolean) Whether the label should be interpreted as HTML or not. Defaults to false. |
 | width  | (optional, integer) The width of the prompt window. Defaults to 370. |
 | minWidth  | (optional, integer) The minimum allowed width for the prompt window. Same default value as width. |
