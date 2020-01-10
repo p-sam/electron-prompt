@@ -52,7 +52,7 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | ------------- | ------------- |
 | title  | (optional, string) The title of the prompt window. Defaults to 'Prompt'. |
 | label  | (optional, string) The label which appears on the prompt for the input field. Defaults to 'Please input a value:'. |
-| buttonLabels | (optional, object) The text for the OK/cancel buttons. Properties are 'ok' and 'cancel' and override the defaults of 'OK' and 'Cancel'. |
+| buttonLabels | (optional, object) The text for the OK/cancel buttons. Properties are 'ok' and 'cancel' . Defaults to null. |
 | value  | (optional, string) The default value for the input field. Defaults to null.|
 | type   | (optional, string) The type of input field, either 'input' for a standard text input field or 'select' for a dropdown type input. Defaults to 'input'.|
 | inputAttrs  | (optional, object) The attributes of the input field, analagous to the HTML attributes: `{type: 'text', required: true}` -> `<input type="text" required>`. Used if the type is 'input' |
