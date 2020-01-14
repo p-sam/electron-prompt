@@ -51,7 +51,8 @@ select#data {
     padding: 0 .5em 0 0;
 }
 
-#buttons > button {
+#buttons > button,
+#buttons > input[type=submit] {
     border-radius: 2px;
     border: 0;
     margin: 0 0 0 .5em;
