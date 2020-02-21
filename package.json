@@ -34,6 +34,6 @@
     "doc-ready": "^1.0.4"
   },
   "devDependencies": {
-    "xo": "^0.25.3"
+    "xo": "^0.26.1"
   }
 }
