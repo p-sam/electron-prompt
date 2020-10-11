@@ -1,20 +1,19 @@
 {
-  "name": "electron-prompt",
+  "name": "electron-form-dialog",
   "version": "0.0.0-dev",
-  "description": "Electron helper to prompt for a value via input or select",
+  "description": "Electron helper to prompt for input given any form inputs.",
   "keywords": [
     "electron",
-    "prompt",
-    "string"
+    "dialog"
   ],
   "author": {
-    "name": "p-sam",
-    "email": "p-sam@users.noreply.github.com",
-    "url": "https://github.com/p-sam"
+    "name": "runekn",
+    "email": "runekn@users.noreply.github.com",
+    "url": "https://github.com/runekn"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/p-sam/electron-prompt.git"
+    "url": "https://github.com/runekn/electron-form-dialog.git"
   },
   "license": "MIT",
   "main": "lib/index.js",

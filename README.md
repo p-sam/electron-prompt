@@ -1,41 +1,38 @@
-# electron-prompt
+# electron-form-dialog
 
-Electron helper to prompt for a value via input or select
-
-[![Build Status](https://travis-ci.com/p-sam/electron-prompt.svg?branch=master)](https://travis-ci.com/p-sam/electron-prompt) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+Electron helper to prompt for input given any html form inputs.
 
 ## Usage
 
 ```sh
-npm install electron-prompt --save
+npm install electron-form-dialog --save
 ```
 
 ```js
-prompt([options, parentBrowserWindow]).then(...).catch(...)
+dialog([options, parentBrowserWindow]).then(...).catch(...)
 ```
 
 ## Example
 
 ```js
-const prompt = require('electron-prompt');
+const dialog = require('electron-form-dialog');
 
-prompt({
-    title: 'Prompt example',
-    label: 'URL:',
-    value: 'http://example.org',
-    inputAttrs: {
-        type: 'url'
-    },
-    type: 'input'
-})
-.then((r) => {
-    if(r === null) {
-        console.log('user cancelled');
+dialog({
+	title: 'Server selection',
+	label: 'Please select a server',
+	container: `
+        <input type="radio" name="server" value="default" checked>
+        <label for="">Standard server</label>
+        <br>
+        <input type="radio" name="server" value="custom">
+        <input type="url" name="custominput" for="custom" placeholder="http://test.com">`
+}).then((r) => {
+	if(r.server === "custom") {
+        setServer(r.custominput);
     } else {
-        console.log('result', r);
+        setServer(null);
     }
-})
-.catch(console.error);
+}).catch(settings.logger.log);
 ```
 
 ## Documentation
@@ -43,7 +40,7 @@ prompt({
 Primary method:
 
 ```js
-prompt([options, parentBrowserWindow]).then(...).catch(...)
+dialog([options, parentBrowserWindow]).then(...).catch(...)
 ```
 
 ### Options object (optional)
@@ -51,14 +48,10 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | Key  | Explanation |
 | ------------- | ------------- |
 | title  | (optional, string) The title of the prompt window. Defaults to 'Prompt'. |
-| label  | (optional, string) The label which appears on the prompt for the input field. Defaults to 'Please input a value:'. |
+| description  | (optional, string) The label which appears on the prompt for the input field. Defaults to 'Please input a value:'. |
+| form | (required, string) Custom HTML to add to the form container. Upon submitting all input tags in this container will converted to JSON object that maps name attribues to values. |
 | buttonLabels | (optional, object) The text for the OK/cancel buttons. Properties are 'ok' and 'cancel'. Defaults to null. |
-| value  | (optional, string) The default value for the input field. Defaults to null.|
-| type   | (optional, string) The type of input field, either 'input' for a standard text input field, 'select' for a dropdown type input, or 'html' for custom form inner html. Defaults to 'input'.|
-| inputAttrs  | (optional, object) The attributes of the input field, analagous to the HTML attributes: `{type: 'text', required: true}` -> `<input type="text" required>`. Used if the type is 'input' |
-| selectOptions  | (optional, object) The items for the select dropdown if using the 'select' type in the format 'value': 'display text', where the value is what will be given to the then block and the display text is what the user will see. |
-| inputHtml | Custom HTML to add to the form container. Upon submitting all input tags in this container will converted to JSON object that maps name attribues to values. |
-| useHtmlLabel | (optional, boolean) Whether the label should be interpreted as HTML or not. Defaults to false. |
+| labelIsHtml | (optional, boolean) Whether the label should be interpreted as HTML or not. Defaults to false. |
 | width  | (optional, integer) The width of the prompt window. Defaults to 370. |
 | minWidth  | (optional, integer) The minimum allowed width for the prompt window. Same default value as width. |
 | height  | (optional, integer) The height of the prompt window. Defaults to 130. |
@@ -74,4 +67,4 @@ If not supplied, it uses the defaults listed in the table above.
 
 ### parentBrowserWindow (optional)
 
-The window in which to display the prompt on. If not supplied, the parent window of the prompt will be null.
+The window in which to display the prompt on. If not supplied, the parent window of the dialog will be null.
