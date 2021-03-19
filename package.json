@@ -1,6 +1,6 @@
 {
   "name": "electron-prompt",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Electron helper to prompt for a value via input or select",
   "keywords": [
     "electron",
@@ -28,12 +28,15 @@
     "env": [
       "node",
       "browser"
-    ]
+    ],
+    "rules": {
+      "unicorn/prefer-ternary": 0
+    }
   },
   "dependencies": {
     "doc-ready": "^1.0.4"
   },
   "devDependencies": {
-    "xo": "^0.32.1"
+    "xo": "^0.38.2"
   }
 }

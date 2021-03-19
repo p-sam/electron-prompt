@@ -4,6 +4,8 @@ Electron helper to prompt for a value via input or select
 
 [![Build Status](https://travis-ci.com/p-sam/electron-prompt.svg?branch=master)](https://travis-ci.com/p-sam/electron-prompt) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
+<p align="center"><img width="482" alt="prompt-preview" src="https://user-images.githubusercontent.com/17620180/111753337-09c0c680-8897-11eb-8ce8-43de29c143bd.png"></p>
+
 ## Usage
 
 ```sh
