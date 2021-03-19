@@ -28,12 +28,15 @@
     "env": [
       "node",
       "browser"
-    ]
+    ],
+    "rules": {
+      "unicorn/prefer-ternary": 0
+    }
   },
   "dependencies": {
     "doc-ready": "^1.0.4"
   },
   "devDependencies": {
-    "xo": "^0.32.1"
+    "xo": "^0.38.2"
   }
 }
