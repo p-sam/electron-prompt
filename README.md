@@ -71,9 +71,21 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | menuBarVisible | (optional, boolean) Whether to show the menubar or not. Defaults to false. |
 | skipTaskbar | (optional, boolean) Whether to show the prompt window icon in taskbar. Defaults to true. |
 | frame | (optional, boolean) Wether to create prompt with frame. Defaults to true. |
+| customScript | (optional, string) The local path of a JS file to run on preload, Defaults to null. |
 
 If not supplied, it uses the defaults listed in the table above.
 
 ### parentBrowserWindow (optional)
 
 The window in which to display the prompt on. If not supplied, the parent window of the prompt will be null.
+
+### customScript (optional)
+
+Create the script with the following template:
+
+```node
+module.exports = () => {
+	// This function will be called as a preload script
+	// So you can use front features like `document.querySelector`
+};
+```
