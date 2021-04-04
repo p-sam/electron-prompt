@@ -71,7 +71,8 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | menuBarVisible | (optional, boolean) Whether to show the menubar or not. Defaults to false. |
 | skipTaskbar | (optional, boolean) Whether to show the prompt window icon in taskbar. Defaults to true. |
 | frame | (optional, boolean) Wether to create prompt with frame. Defaults to true. |
-| customScript | (optional, string) The local path of a JS file to run on preload, Defaults to null. |
+| customScript | (optional, string) The local path of a JS file to run on preload. Defaults to null. |
+| enableRemoteModule | (optional, boolean) Wether the prompt window have remote modules activated, Defaults to false. |
 
 If not supplied, it uses the defaults listed in the table above.
 
