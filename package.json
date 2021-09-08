@@ -34,6 +34,7 @@
     }
   },
   "dependencies": {
+    "@electron/remote": "^1.2.1",
     "doc-ready": "^1.0.4"
   },
   "devDependencies": {
