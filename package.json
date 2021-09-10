@@ -33,6 +33,9 @@
       "unicorn/prefer-ternary": 0
     }
   },
+  "dependencies": {
+    "@electron/remote": "^1.2.1"
+  },
   "devDependencies": {
     "xo": "^0.38.2"
   }
