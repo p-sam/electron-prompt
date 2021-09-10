@@ -34,9 +34,6 @@
       "unicorn/prefer-module": 0
     }
   },
-  "dependencies": {
-    "@electron/remote": "^1.2.1"
-  },
   "devDependencies": {
     "xo": "^0.44.0"
   }
