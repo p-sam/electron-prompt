@@ -10,7 +10,7 @@ body {
     justify-content: center;
     display: flex;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 #form {
