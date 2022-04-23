@@ -70,7 +70,7 @@ prompt([options, parentBrowserWindow]).then(...).catch(...)
 | customStylesheet  | (optional, string) The local path of a CSS file to stylize the prompt window. Defaults to null. |
 | menuBarVisible | (optional, boolean) Whether to show the menubar or not. Defaults to false. |
 | skipTaskbar | (optional, boolean) Whether to show the prompt window icon in taskbar. Defaults to true. |
-| showWhenReady | (optional, boolean) Whether to only show the prompt window once its content has loaded to avoid an empty prompt from being displayed while the content is loading. Defaults to false. |
+| showWhenReady | (optional, boolean) Whether to only show the prompt window once content is loaded. Defaults to false. |
 
 If not supplied, it uses the defaults listed in the table above.
 
